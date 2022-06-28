@@ -1,0 +1,9 @@
+data/*
+src/example/.Rhistory
+src/example/example.dll
+src/example/example.o
+src/example/example.so
+src/.Rhistory
+src/v5.o
+src/v5.dll
+src/v5.so
