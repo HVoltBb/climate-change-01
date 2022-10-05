@@ -28,15 +28,15 @@ Not being able to adopt a sufficiently high temporal resolution greatly constrai
 
 [Data policy](https://www.data.gov/privacy-policy#data_policy)
 
-Case study tagging data [NOAA Fisheries Inport site](https://www.fisheries.noaa.gov/inport/item/25121)/[Data.gov site](https://catalog.data.gov/dataset/cooperative-shark-mark-recapture-database-mrdbs/resource/5d9ceb5f-2864-4e75-91ca-2800b402f855?inner_span=True)
+Case study tagging data [Data.gov site](https://catalog.data.gov/dataset/cooperative-shark-mark-recapture-database-mrdbs/resource/5d9ceb5f-2864-4e75-91ca-2800b402f855?inner_span=True)
 
 [Climate indices](https://www.cpc.ncep.noaa.gov/products/precip/CWlink/pna/nao.shtml)
 
-Disclaimer: Neither of the datasets are maintained by me. Please go to the original source to obtain your own copy of the file. Questions solely related to the dataset should be directed to the data maintainers found in the links above. However, if the links provided above are not working, let me know. The format of the current version of the data files might be different from my copy, and you may need to change some lines in the [preprocessing code](src/preprocess.R) to take that into account.
+Disclaimer: Neither of the datasets are maintained by me. Please go to some official source (there are alternative data providers not listed here) to obtain your own copy of the file. Questions solely related to the dataset should be directed to the data maintainers found in the links above. However, if the links provided above are not working, let me know. The format of the current version of the data files will be different from my copy, and you may need to change some lines in the [preprocessing code](src/preprocess.R) to take that into account.
 
-My own copy of the data files will be conditionally provided through PM (latency: hours) or through an automatic email server by clicking [here](mailto:eidotog@gmail.com?subject=XxCLIMATE01xX&body=Do%20not%20modify%20the%20subject%20line.%20Not%20monitored.) (latency: secs). Note that I don't monitor these data requests. Once a request is fullfilled, the message will be permanantly removed from the server. No personal information will be collected by me. There is no guarantee on the quality and timeliness of the data once it is downloaded.
+My own copy of the data files will be make available through an automatic email server by clicking [here](mailto:eidotog@gmail.com?subject=XxCLIMATE01xX&body=Do%20not%20modify%20the%20subject%20line.%20Not%20monitored.) (latency: secs). Note that I don't monitor these data requests. Once a request is fullfilled, the message will be permanantly deleted from the server. No personal information will be collected by me. There is no guarantee on the quality and timeliness of the data once it is delivered.
 
-Datasets of this section exist in the public domain. They are not covered by the license of this repository.
+Datasets of this section exist in the public domain AKA CC0. They are not covered by the license of this repository. __Warning__: some data providers will try to attach unfair conditions to your data usage. Do know your rights and do not fall into those traps and choose your data provider wisely. 
 
 ### Example
 
@@ -44,7 +44,7 @@ The example files can be found [here](src/example). That folder contains an [R s
 
 Download the [source directory](src) first, and then make `example` you working directory. Then, you can source the [R script](src/example/example.R) to fit a von Bertalanffy curve to see if it works correctly on your machine. A verification value has been provided in the comment section at the bottom of the script. Getting exactly the same number as provided indicates success. Most likely, your R console will complain about missing libraries the first time you run it. Install them.
 
-This code has been tested on both Windows and Linux systems. There are no system requirements to run the example.
+This code has been tested on both Windows and Linux systems. There are no system requirements to run the example code.
 
 ### Full source code
 
@@ -56,8 +56,6 @@ The R code has been annotated and sectioned according to RStudio style. It is re
 
 This code has been tested on both Windows and Linux systems with 8+ GB of RAM.
 
-Warning: it is recommended to run the full program on a system with 8+ GB of RAM. Some of the large models require a substantial amount of memory to execute. Your system may freeze if you are low on available memory. Your R may crash if the TMB program is given a wrong set of inputs. You have been warned. Do save your work first.
+__Warning__: it is recommended to run the full program on a system with 8+ GB of RAM. Some of the large models require a substantial amount of memory to execute. Your system may freeze if you are low on available memory. Your R may crash if the TMB program is given a wrong set of inputs. You have been warned. Do save your work first.
 
-Bug reports, feature requests, and colabs are welcome.
-
-[^1]: The state of this repo is currently frozen such that it provides a snapshot view of the model development stage as presented in the publication. The code, however, has been continuously developed with new features added and tested. The next version of the code will appear in a different repo. Future updates of this repo are limited to minor changes, such as typo or bug fixes.
+[^1]: The state of this repo is frozen such that it provides a snapshot view of the model development stage as presented in the publication. The code, however, has been continuously updated with new features added and tested. The next version of the code will appear in a different repo. Future updates of this repo are limited to minor changes, such as typo or bug fixes.
